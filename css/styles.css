@@ -7,7 +7,6 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   width: 1000px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
 }
 .clearfix:after {
   content: " ";
@@ -87,11 +86,11 @@ ul:after {
   clear: both;
   float: none;
 }
-ul.menu  li {
+ul.menu li {
   float: left;
   position: relative;
 }
-ul.menu  li  a {
+ul.menu > li > a {
   display: block;
   padding: 0 58px 0 11px;
   font-size: 14px;
@@ -125,10 +124,10 @@ ul.submenu {
   background-color: #333333;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
 }
-ul.submenu  li {
+ul.submenu li {
   display: block;
 }
-ul.submenu  li > a {
+ul.submenu > li > a {
   display: block;
   margin-left: 10px;
   font-size: 14px;
