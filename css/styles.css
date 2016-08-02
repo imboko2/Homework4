@@ -7,6 +7,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   width: 1000px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
 }
 .clearfix:after {
   content: " ";
@@ -79,14 +80,9 @@ ul {
   height: 27px;
   border-bottom: 1px solid black;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+  z-index: 1;
 }
-ul:after {
-  display: block;
-  content: ' ';
-  clear: both;
-  float: none;
-}
-ul.menu li {
+.menu li {
   float: left;
   position: relative;
 }
@@ -127,7 +123,7 @@ ul.submenu {
 ul.submenu li {
   display: block;
 }
-ul.submenu > li > a {
+.submenu_list_item {
   display: block;
   margin-left: 10px;
   font-size: 14px;
@@ -136,19 +132,18 @@ ul.submenu > li > a {
   line-height: 24px;
   color: white;
 }
-ul.submenu > li > a:hover {
-  text-decoration: underline;
-}
-ul.menu > li:hover > ul.submenu {
+
+ul.menu li:hover > ul.submenu {
   display: block;
 }
                                       /*CONTENT*/
 .information {
-  height: 536px;
   background-color:#edeef0;
   float: left;
   width: 209px;
   border: 1px solid #c7cacf;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
 .information_menu {
   text-align: center;
@@ -170,9 +165,10 @@ ul.menu > li:hover > ul.submenu {
 .news {
   background-color:#edeef0;
   width: 209px;
-  height: 100%;
   border: 1px solid #c7cacf;
   float: right;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
 }
 .news_menu {
   text-align: center;
@@ -196,4 +192,15 @@ ul.menu > li:hover > ul.submenu {
   color: white;
   font-size: 12px;
   font-weight: 400;
+}
+.center_column {
+  float: left;
+  width: 580px;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  background-color: white;
+}
+.content_menu {
+  width: 1000px;
+  overflow: hidden;
 }
