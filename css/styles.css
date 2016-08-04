@@ -14,8 +14,9 @@ body {
   display: block;
   height: 0;
   clear: both;
-                                  /*HEADER*/
 }
+                                  /*HEADER*/
+
 .header_logo {
   float: left;
   color: rgb(18, 138, 167);
@@ -32,6 +33,9 @@ body {
   padding-left: 71px;
   width: 215px;
   height: 68px;
+  color: rgb(18, 138, 167);
+  font-size: 12px;
+  font-weight: 400;
 }
 .header_contacts {
   margin-right: 31px;
